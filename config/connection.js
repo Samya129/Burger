@@ -24,8 +24,3 @@ connection.connect((err) => {
 
 // Export connection for our ORM to use.
 module.exports = connection;
-
-
-
-
-//NEED TO VERIFY THAT CONNECTION WORKS!!!!

@@ -1,0 +1,26 @@
+body {
+  background: rgb(235, 4, 4);
+  background: linear-gradient(
+    347deg,
+    rgba(235, 4, 4, 1) 21%,
+    rgba(255, 167, 0, 1) 71%,
+    rgba(255, 249, 0, 1) 99%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1 {
+    color: #0d8a22; 
+    text-align: center;
+}
+.rounded .mx-auto .d-block .text-center{
+    width: 20rem; 
+    height: 20rem;
+    display: inline-block; 
+    vertical-align: middle;
+}
+.jumbotron{
+    opacity: 0.8; 
+    background-color: white; 
+    text-align: center;
+}

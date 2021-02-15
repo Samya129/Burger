@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
               console.log(`changed devoured to: ${newDevoured}`);
               location.reload('/');
             } else {
-              alert('Something is wrong! Check near line 38 in burgers.js file!');
+              alert('Something is VERY wrong!');
             }
           });
         });

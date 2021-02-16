@@ -17,7 +17,10 @@ router.get('/', (req, res) => {
   });
 
   router.post('/api/burgers', (req, res) => {
-    burger.create(['burger_name', 'devoured'], [req.body.burger_name, req.body.devoured], (result) => {
+    //coming from sql
+    //Second part: js front end
+    //public and views is front-end
+    burger.create(['burger_name', 'devoured'], [req.body.name, false], (result) => {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });

@@ -24,6 +24,10 @@ h1 {
     background-color: white; 
     text-align: center;
 }
+.burgerContainer{
+display: flex;
+flex-direction: row;
+}
 
 /* Styling sample Below: */
 li {

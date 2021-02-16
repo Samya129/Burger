@@ -9,31 +9,41 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.introContainer{
+  text-align: center;
+}
+
 h1 {
-    color: #0d8a22; 
-    text-align: center;
+  color: #0d8a22; 
 }
-.rounded .mx-auto .d-block .text-center{
-    width: 20rem; 
-    height: 20rem;
-    display: inline-block; 
-    vertical-align: middle;
-}
+
 .jumbotron{
-    opacity: 0.8; 
-    background-color: white; 
-    text-align: center;
+  opacity: 0.8; 
+  background-color: white; 
+  text-align: center;
+  height: 10 rem;
 }
+
 .burgerContainer{
 display: flex;
 flex-direction: row;
 }
 
-/* Styling sample Below: */
+.subTitles{
+  text-decoration: underline;
+}
+
+img{
+  width: 20rem; 
+  height: 20rem;
+  display: inline-block; 
+  vertical-align: middle;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {
@@ -43,7 +53,6 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
 }
 
 .form-group {

@@ -10,34 +10,34 @@ body {
   background-attachment: fixed;
 }
 
-.introContainer{
+.introContainer {
   text-align: center;
 }
 
 h1 {
-  color: #0d8a22; 
+  color: #0d8a22;
 }
 
-.jumbotron{
-  opacity: 0.8; 
-  background-color: white; 
+.jumbotron {
+  opacity: 0.8;
+  background-color: white;
   text-align: center;
   height: 10 rem;
 }
 
-.burgerContainer{
-display: flex;
-flex-direction: row;
+.burgerContainer {
+  display: flex;
+  flex-direction: row;
 }
 
-.subTitles{
+.subTitles {
   text-decoration: underline;
 }
 
-img{
-  width: 20rem; 
+img {
+  width: 20rem;
   height: 20rem;
-  display: inline-block; 
+  display: inline-block;
   vertical-align: middle;
 }
 

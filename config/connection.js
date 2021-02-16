@@ -1,16 +1,16 @@
 // Set up MySQL connection:
-const mysql = require('mysql');
+const mysql = require("mysql");
 
 require("dotenv").config();
 // console.log(process.env.SECRETPASSWORD)
 
 //Connect the burger_db database using a localhost connection:
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: "localhost",
   port: 3306,
-  user: 'root',
+  user: "root",
   password: process.env.SECRETPASSWORD,
-  database: 'burger_db',
+  database: "burger_db",
 });
 
 // Make connection.

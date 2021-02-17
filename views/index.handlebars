@@ -40,38 +40,38 @@
   <br>
   <form id="create-form">
     <div class="form-group">
-      <input type="text" id="bur" name="name">
-      <button type="submit">Order Up!</button>
+      <input style="height: 36px;" type="text" id="bur" name="name">
+      <button class="btn btn-danger" type="submit">Order Up!</button>
     </div>
   </form>
 </div>
 
-{{!-- <div class="container"> --}}
-  {{!-- <div class="burgerContainer"> --}}
+<div class="container">
+  <div class="burgerContainer">
     <div class="row">
-      <div class="col-med-4">
-          <h2 class="subTitles">Burger Orders: <b>READY!</b></h2>
-          <ul>
-            {{#each burgers}}
-            {{#unless devoured}}
-            {{> burgers/burger-block devoured=true}}
-            {{/unless}}
-            {{/each}}
-          </ul>
+      <div class="col-md-4">
+        <h2 class="subTitles"><b>READY </b>Orders: </h2>
+        <ul>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
+        </ul>
       </div>
-      <div class="col-med-4">
-        <img class="rounded mx-auto d-block text-center" src="/assets/images/burger.png" alt="Burger Image">
+      <div class="col-md-4">
+        <img class="rounded mx-auto d-block" src="/assets/images/burger.png" alt="Burger Image">
       </div>
-      <div class="col-med-4">
-          <h2 class="subTitles"><b>Devoured Burgers:</b></h2>
-          <ul>
-            {{#each burgers}}
-            {{#if devoured}}
-            {{> burgers/burger-block devoured=false}}
-            {{/if}}
-            {{/each}}
-          </ul>
+      <div class="col-md-4">
+        <h2 class="subTitles">Devoured Burgers:</h2>
+        <ul>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+        </ul>
       </div>
     </div>
-  {{!-- </div> --}}
-{{!-- </div> --}}
+  </div>
+</div>

@@ -1,9 +1,9 @@
-<li>
+<li class="d-flex flex-column">
 	{{burger_name}}
 
-	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+	<button class="change-devoured btn btn-success btn-small" data-id="{{id}}" data-newdevoured="{{devoured}}">
 		{{#if devoured}} Devour!{{else}}Care for another?{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">I'm Done!</button>
+	<button class="delete-burger btn btn-success btn-sm" data-id="{{this.id}}">I'm Done!</button>
 </li>

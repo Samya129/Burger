@@ -3,41 +3,32 @@
   <strong>Menu</strong>
 </div>
 
-<Menu id="myMenu" style="text-align: center;">
-  <ol>
-    <li>
-      <menuitem label="Cheese Burger"><b> 1. Cheese Burger:</b> Lean ground beef, fresh lettuce, tomatoes, pickles, and
-      melted american cheese.</menuitem>
-    </li>
-    <li>
-      <menuitem label="Chilli Burger"><b>Chilli Burger:</b> Lean ground beef, onion rings, cheddar cheese, brioche
-      buns, mild chilli, and barbecue sauce.</menuitem>
-    </li>
-    <li>
-      <menuitem label="Veggie Burger"><b>Veggie Burger:</b> Made fresh daily with sauteéd mushrooms, flaxseed,
-      short-grain brown rice, panko, and walnuts.</menuitem>
-    </li>
-    <li>
-      <menuitem label="Steak Burger"><b>Steak Burger:</b> Lean ground beef, freshly cut scallions, salt, pepper,
-      worcestershire sauce, topped with fresh hamburger buns.</menuitem>
-    </li>
-    <li>
-      <menuitem label="Hamburger"><b>Hamburger:</b> Lean ground beef seasoned with cajun seasoning, fresh garlic,
-      salt, black pepper, argula, and sundried tomatoes.</menuitem>
-    </li>
-    <li>
-      <menuitem label="California Avocado Burger"><b>California Avocado Burger:</b> Lean ground beef, ripe fresh
-      California avocados, lettuce, onions,tomatoes, and sesame seed burger buns.</menuitem>
-    </li>
-    <li>
-      <menuitem label="Salmon Burger"><b>Salmon Burger:</b>Course breadcrumbed boneless salmon, peeled and cut
-      shallots, dijon mustard, capers, salt, pepper, fresh butter, lemon wedges, and tabasco sauce.</menuitem>
-    </li>
-    <li>
-      <menuitem label="Oklahoma Onion Burger"><b>Oklahoma Onion Burger:</b>Lean ground beef, salt, fresh black pepper,
-      thinly sliced white onions, melted chedder cheese, pickles, mustard, and freshly baked burger buns.</menuitem>
-    </li>
-  </ol>
+<Menu id="myMenu">
+
+  <menuitem label="Cheese Burger"><b> 1. Cheese Burger:</b> Lean ground beef, fresh lettuce, tomatoes, pickles, and
+  melted american cheese.</menuitem>
+  <br>
+  <menuitem label="Chilli Burger"><b>2. Chilli Burger:</b> Lean ground beef, onion rings, cheddar cheese, brioche
+  buns, mild chilli, and barbecue sauce.</menuitem>
+  <br>
+  <menuitem label="Veggie Burger"><b>3. Veggie Burger:</b> Made fresh daily with sauteéd mushrooms, flaxseed,
+  short-grain brown rice, panko, and walnuts.</menuitem>
+  <br>
+  <menuitem label="Steak Burger"><b>4. Steak Burger:</b> Lean ground beef, freshly cut scallions, salt, pepper,
+  worcestershire sauce, topped with fresh hamburger buns.</menuitem>
+  <br>
+  <menuitem label="Hamburger"><b>5. Hamburger:</b> Lean ground beef seasoned with cajun seasoning, fresh garlic,
+  salt, black pepper, argula, and sundried tomatoes.</menuitem>
+  <br>
+  <menuitem label="California Avocado Burger"><b> 6. California Avocado Burger:</b> Lean ground beef, ripe fresh
+  California avocados, lettuce, onions,tomatoes, and sesame seed burger buns.</menuitem>
+  <br>
+  <menuitem label="Salmon Burger"><b>7. Salmon Burger:</b>Course breadcrumbed boneless salmon, peeled and cut
+  shallots, dijon mustard, capers, salt, pepper, fresh butter, lemon wedges, and tabasco sauce.</menuitem>
+  <br>
+  <menuitem label="Oklahoma Onion Burger"><b>8. Oklahoma Onion Burger:</b>Lean ground beef, salt, fresh black pepper,
+  thinly sliced white onions, melted chedder cheese, pickles, mustard, and freshly baked burger buns.</menuitem>
+
 </Menu>
 
 <br>
@@ -54,30 +45,33 @@
     </div>
   </form>
 </div>
-<div class="container">
-<div class="burgerContainer">
-  <div class="row">
-    <div class="devouredContainer">
-      <h2 class="subTitles">Burger Orders: <b>READY!</b></h2>
-      <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block devoured=true}}
-        {{/unless}}
-        {{/each}}
-      </ul>
+
+{{!-- <div class="container"> --}}
+  {{!-- <div class="burgerContainer"> --}}
+    <div class="row">
+      <div class="col-med-4">
+          <h2 class="subTitles">Burger Orders: <b>READY!</b></h2>
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+      </div>
+      <div class="col-med-4">
+        <img class="rounded mx-auto d-block text-center" src="/assets/images/burger.png" alt="Burger Image">
+      </div>
+      <div class="col-med-4">
+          <h2 class="subTitles"><b>Devoured Burgers:</b></h2>
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
+      </div>
     </div>
-    <img class="rounded mx-auto d-block text-center" src="/assets/images/burger.png" alt="Burger Image">
-    <div class="notDevouredContainer">
-      <h2 class="subTitles"><b>Devoured Burgers:</b></h2>
-      <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burgers/burger-block devoured=false}}
-        {{/if}}
-        {{/each}}
-      </ul>
-    </div>
-  </div>
-  </div>
-</div>
+  {{!-- </div> --}}
+{{!-- </div> --}}

@@ -18,16 +18,15 @@ h1 {
   color: #0d8a22;
 }
 
+#myMenu{
+  text-align: center;
+}
+
 .jumbotron {
   opacity: 0.8;
   background-color: white;
   text-align: center;
   height: 10 rem;
-}
-
-.burgerContainer {
-  display: flex;
-  flex-direction: row;
 }
 
 .subTitles {
@@ -57,4 +56,11 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.row{
+  padding-left: 100px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
 }

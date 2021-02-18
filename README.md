@@ -2,12 +2,12 @@
 
 ## Description
 
-I created a burger devouring application with a homemade ORM. Together, it can log a user's request of their choice of deliciousness or maybe have another burger per their request. By following the MVC design pattern, I was able to query and route data in this application, AND used Handlebars to generate my html.
+I created a full-stack burger devouring application with a homemade ORM. Together, it can log a user's request of their choice of deliciousness or maybe have another burger per their request. By following the MVC design pattern, I was able to query and route data in this application, AND used Handlebars to generate my html. When a user orders a burger, it gets displayed in the Ready Orders column and stored into the database. When you are ready to eat it, click devour. Once devoured, that burger gets placed in the devoured burgers column. The user then has the choice of ordering another one of that type of burger, ordering an entirely new burger type by inputting their burger name above OR clicking i'm done. This suggests that the user is no longer hungry and does not want another burger which then gets deleted. With a unique id for each burger, we can ensure a system that tracks the statistics of requested and eaten burgers for users or consumers.
 
 ## User Story
 ```
 As a user,
-I want to be able to add the type of burger I want to order from the menu, devour it, order another burger per my request as many as I would like, and get rid of all the eaten evidence after I am done 
+I want to be able to add the type of burger I want to order from the menu, devour it, order another burger per my request as many as I would like, and get rid of (or delete) all the eaten evidence after I am done 
 So that I can order, eat as much as I want, and go about my working day happily feed, full, and ready to tackle the rest of my day.
 ```
 
@@ -22,20 +22,28 @@ So that I can order, eat as much as I want, and go about my working day happily 
 
 ## Installation 
 
-* Node Package Manager: Inquirer 
-* Dotenv
-* MySQL
-* Express
-* Handlebars
-* Handlebars-helper-css
-* Nodemon
+In order to install these dependencies, 
+
+Run the following command in the terminal in any order AFTER the first numbered list item:
+``
+1. npm i 
+2. npm install mysql
+3. npm install express
+4. npm install express-handlebars
+``
+
 
 ## Usage
-
-* Node
-* Terminal
-* Javascript
+ 
 * ES6
+* MYSQL
+* Dotenv
+* Express
+* Terminal
+* Handlebars
+* Javascript
+* ORM (Object Relational Mapper)
+* Node Package Manager: Inquirer
 
 ## License
 

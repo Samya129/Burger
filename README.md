@@ -18,6 +18,8 @@ So that I can order, eat as much as I want, and go about my working day happily 
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
+* [Criteria](#criteria)
+* [Application](#application)
 * [Questions](#questions)
 
 ## Installation 
@@ -69,10 +71,12 @@ To run test, run the following commands:
 - Updated Portfolio with this Burger application.
 ```
 
-## Questions
+## Application
 
 ![GitHub Logo](./public/assets/images/BurgerDemo.png)
 
 * [Burger App](https://immense-lake-44688.herokuapp.com/)
+
+## Questions
 
 * If you have any questions regarding this repository, contact me either by email at Samyaf020@gmail.com, or you can find more of my work within my github account attached here [Github](https://github.com/Samya129). Here, you can also open an issue if needed.

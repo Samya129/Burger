@@ -71,6 +71,8 @@ To run test, run the following commands:
 
 ## Questions
 
+![GitHub Logo](./public/assets/images/BurgerDemo.png)
+
 * [Burger App](https://immense-lake-44688.herokuapp.com/)
 
 * If you have any questions regarding this repository, contact me either by email at Samyaf020@gmail.com, or you can find more of my work within my github account attached here [Github](https://github.com/Samya129). Here, you can also open an issue if needed.

@@ -25,12 +25,12 @@ So that I can order, eat as much as I want, and go about my working day happily 
 In order to install these dependencies, 
 
 Run the following command in the terminal in any order AFTER the first numbered list item:
-``
+
 1. npm i 
 2. npm install mysql
 3. npm install express
 4. npm install express-handlebars
-``
+
 
 
 ## Usage
